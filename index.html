@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novo Atacarejo – O melhor disparado</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ── TOPBAR ── -->
+  <div class="topbar">
+    <div>📍 Pernambuco · Ceará · Paraíba · Rio Grande do Norte · Piauí · Maranhão</div>
+    <div class="topbar-links">
+      <a href="#trabalhe">Trabalhe conosco</a>
+      <a href="#sobre">Quem somos</a>
+      <a href="#lojas">Nossas lojas</a>
+      <a href="#">Fale conosco</a>
+    </div>
+  </div>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <a href="#" class="logo">
+      <div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <div class="logo-badge">Novo</div>
+          <div class="logo-text">Atacarejo</div>
+        </div>
+        <div class="logo-sub">Qualidade de supermercado, precinho de atacado</div>
+      </div>
+    </a>
+
+    <nav>
+      <a href="#" class="ativo">Início</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#encartes">Encartes</a>
+      <a href="#lojas">Lojas</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#trabalhe">Vagas</a>
+    </nav>
+
+    <div class="header-cta">
+      <button class="btn-busca">🔍 Buscar</button>
+      <button class="btn-loja">📍 Encontrar loja</button>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero" style="padding:0;">
+    <div class="hero-diagonal"></div>
+    <div class="hero-content">
+      <span class="hero-badge">💛 É do povo, é do Novo</span>
+      <h1>O melhor<br><span>disparado</span></h1>
+      <p>Qualidade de supermercado com preço de atacado. Mais de 23 lojas espalhadas pelo Nordeste para você encher o
+        carrinho.</p>
+      <div class="hero-buttons">
+        <button class="btn-primario">🛒 Ver ofertas da semana</button>
+        <button class="btn-secundario">📍 Encontrar loja</button>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-encarte">
+        <div class="encarte-header">
+          <span class="encarte-tag">🔥 Ofertas da semana</span>
+          <span class="encarte-validade">Válido até 30/03</span>
+        </div>
+        <div class="encarte-produtos">
+          <div class="produto-card">
+            <div class="produto-img">🥩</div>
+            <div class="produto-nome">Carne Bovina kg</div>
+            <div class="produto-preco-de">De R$ 45,90</div>
+            <div class="produto-preco"><span>R$</span> 32<span>,90</span></div>
+          </div>
+          <div class="produto-card">
+            <div class="produto-img">🧀</div>
+            <div class="produto-nome">Queijo Mussarela kg</div>
+            <div class="produto-preco-de">De R$ 38,90</div>
+            <div class="produto-preco"><span>R$</span> 27<span>,90</span></div>
+          </div>
+          <div class="produto-card">
+            <div class="produto-img">🍗</div>
+            <div class="produto-nome">Frango Inteiro kg</div>
+            <div class="produto-preco-de">De R$ 14,90</div>
+            <div class="produto-preco"><span>R$</span> 8<span>,99</span></div>
+          </div>
+          <div class="produto-card">
+            <div class="produto-img">🛢️</div>
+            <div class="produto-nome">Óleo de Soja 900ml</div>
+            <div class="produto-preco-de">De R$ 8,90</div>
+            <div class="produto-preco"><span>R$</span> 5<span>,99</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAIXA SLOGAN ── -->
+  <div class="faixa-slogan">
+    <span class="emoji">💛</span>
+    <span>É do povo, é do Novo</span>
+    <span class="divisor">|</span>
+    <span>O melhor disparado</span>
+    <span class="divisor">|</span>
+    <span>Qualidade de supermercado, precinho de atacado</span>
+    <span class="emoji">💙</span>
+  </div>
+
+  <!-- ── DEPARTAMENTOS ── -->
+  <section class="departamentos" id="departamentos">
+    <div class="section-label">Explore</div>
+    <div class="section-title">Nossos departamentos</div>
+    <div class="section-sub">Tudo que você precisa em um só lugar, com a qualidade que você merece pelo melhor preço.
+    </div>
+
+    <div class="depto-grid">
+      <a class="depto-card" href="#"><span class="depto-icon">🥩</span><span class="depto-nome">Açougue</span></a>
+      <a class="depto-card" href="#"><span class="depto-icon">🥖</span><span class="depto-nome">Padaria</span></a>
+      <a class="depto-card" href="#"><span class="depto-icon">🧀</span><span class="depto-nome">Frios e
+          Laticínios</span></a>
+      <a class="depto-card" href="#"><span class="depto-icon">🥦</span><span class="depto-nome">Hortifruti</span></a>
+      <a class="depto-card" href="#"><span class="depto-icon">🐟</span><span class="depto-nome">Peixaria</span></a>
+      <a class="depto-card" href="#"><span class="depto-icon">🛢️</span><span class="depto-nome">Mercearia</span></a>
+      <a class="depto-card" href="#"><span class="depto-icon">🧴</span><span class="depto-nome">Higiene e
+          Beleza</span></a>
+      <a class="depto-card" href="#"><span class="depto-icon">🧹</span><span class="depto-nome">Limpeza</span></a>
+      <a class="depto-card" href="#"><span class="depto-icon">🍷</span><span class="depto-nome">Bebidas</span></a>
+      <a class="depto-card" href="#"><span class="depto-icon">🍬</span><span class="depto-nome">Confeitaria</span></a>
+      <a class="depto-card" href="#"><span class="depto-icon">👶</span><span class="depto-nome">Bebês e
+          Crianças</span></a>
+      <a class="depto-card" href="#"><span class="depto-icon">🐾</span><span class="depto-nome">Pet</span></a>
+    </div>
+  </section>
+
+  <!-- ── OFERTAS ── -->
+  <section id="ofertas" style="padding:64px 60px;">
+    <div
+      style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px; margin-bottom:32px;">
+      <div>
+        <div class="section-label">Economize mais</div>
+        <div class="section-title" style="margin-bottom:0;">Ofertas da semana</div>
+      </div>
+      <a href="#encartes" style="font-weight:700; color:var(--vermelho); text-decoration:none; font-size:14px;">Ver
+        encarte completo →</a>
+    </div>
+
+    <div class="ofertas-grid">
+      <div class="oferta-card">
+        <div class="oferta-img">🥩<span class="oferta-desconto">-28%</span></div>
+        <div class="oferta-info">
+          <div class="oferta-nome">Carne Bovina – Patinho</div>
+          <div class="oferta-desc">kg · Resfriado</div>
+          <div class="oferta-preco-de">R$ 45,90</div>
+          <div class="oferta-preco"><small>R$</small> 32,90</div>
+        </div>
+      </div>
+      <div class="oferta-card">
+        <div class="oferta-img">🍗<span class="oferta-desconto">-40%</span></div>
+        <div class="oferta-info">
+          <div class="oferta-nome">Frango Inteiro Resfriado</div>
+          <div class="oferta-desc">kg · Marca própria</div>
+          <div class="oferta-preco-de">R$ 14,90</div>
+          <div class="oferta-preco"><small>R$</small> 8,99</div>
+        </div>
+      </div>
+      <div class="oferta-card">
+        <div class="oferta-img">🧀<span class="oferta-desconto">-30%</span></div>
+        <div class="oferta-info">
+          <div class="oferta-nome">Queijo Mussarela</div>
+          <div class="oferta-desc">kg · Fatiado</div>
+          <div class="oferta-preco-de">R$ 38,90</div>
+          <div class="oferta-preco"><small>R$</small> 27,90</div>
+        </div>
+      </div>
+      <div class="oferta-card">
+        <div class="oferta-img">🛢️<span class="oferta-desconto">-33%</span></div>
+        <div class="oferta-info">
+          <div class="oferta-nome">Óleo de Soja</div>
+          <div class="oferta-desc">900ml · Liza</div>
+          <div class="oferta-preco-de">R$ 8,90</div>
+          <div class="oferta-preco"><small>R$</small> 5,99</div>
+        </div>
+      </div>
+      <div class="oferta-card">
+        <div class="oferta-img">🍺<span class="oferta-desconto">-22%</span></div>
+        <div class="oferta-info">
+          <div class="oferta-nome">Cerveja Skol Lata</div>
+          <div class="oferta-desc">350ml · Pack 12 un</div>
+          <div class="oferta-preco-de">R$ 52,90</div>
+          <div class="oferta-preco"><small>R$</small> 41,90</div>
+        </div>
+      </div>
+      <div class="oferta-card">
+        <div class="oferta-img">🧴<span class="oferta-desconto">-25%</span></div>
+        <div class="oferta-info">
+          <div class="oferta-nome">Detergente Limpol</div>
+          <div class="oferta-desc">500ml · 3 unidades</div>
+          <div class="oferta-preco-de">R$ 12,90</div>
+          <div class="oferta-preco"><small>R$</small> 9,69</div>
+        </div>
+      </div>
+      <div class="oferta-card">
+        <div class="oferta-img">🍫<span class="oferta-desconto">-35%</span></div>
+        <div class="oferta-info">
+          <div class="oferta-nome">Achocolatado Nescau</div>
+          <div class="oferta-desc">400g · Nestlé</div>
+          <div class="oferta-preco-de">R$ 9,90</div>
+          <div class="oferta-preco"><small>R$</small> 6,49</div>
+        </div>
+      </div>
+      <div class="oferta-card">
+        <div class="oferta-img">🍚<span class="oferta-desconto">-20%</span></div>
+        <div class="oferta-info">
+          <div class="oferta-nome">Arroz Branco Tipo 1</div>
+          <div class="oferta-desc">5kg · Camil</div>
+          <div class="oferta-preco-de">R$ 28,90</div>
+          <div class="oferta-preco"><small>R$</small> 23,50</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ver-mais">
+      <button class="btn-ver-mais">Ver todas as ofertas</button>
+    </div>
+  </section>
+
+  <!-- ── BANNER MEIO (APP) ── -->
+  <div class="banner-meio">
+    <div class="banner-meio-content">
+      <div class="section-label">Facilidade</div>
+      <div class="section-title">Encarte digital<br>na palma da mão</div>
+      <p class="section-sub">Acesse os encartes de promoções, confira os preços e planeje suas compras antes mesmo de
+        sair de casa. Tudo rápido e fácil.</p>
+      <div class="hero-buttons">
+        <button class="btn-primario" style="background:var(--azul); color:var(--amarelo);">📱 Ver encartes
+          digitais</button>
+      </div>
+    </div>
+    <div class="banner-meio-visual">
+      <div class="app-mockup">
+        <div class="app-header">
+          <div class="app-logo">NOVO Atacarejo</div>
+          <div style="font-size:10px; color:var(--azul); opacity:0.7; margin-top:2px;">Encarte Digital</div>
+        </div>
+        <div class="app-item"><span class="app-item-icon">🔥</span> Ofertas da semana</div>
+        <div class="app-item"><span class="app-item-icon">📅</span> Encarte quinzenal</div>
+        <div class="app-item"><span class="app-item-icon">🎉</span> Promoções especiais</div>
+        <div class="app-item"><span class="app-item-icon">📍</span> Lojas próximas</div>
+        <div
+          style="margin-top:12px; background:var(--vermelho); border-radius:8px; text-align:center; padding:10px; color:white; font-weight:700; font-size:13px;">
+          Ver encarte agora →</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ENCARTES ── -->
+  <section class="encartes" id="encartes">
+    <div class="section-label">Aproveite</div>
+    <div class="section-title">Encartes e promoções</div>
+    <div class="section-sub">Confira nossos encartes vigentes e não perca nenhuma promoção especial.</div>
+
+    <div class="encartes-grid">
+      <div class="encarte-card">
+        <div class="encarte-capa ec-vermelho">🔥</div>
+        <div class="encarte-info">
+          <div>
+            <div class="encarte-titulo">Ofertas da Semana</div>
+            <div class="encarte-periodo">25 a 31 de março</div>
+          </div>
+          <button class="btn-ver-encarte">Ver</button>
+        </div>
+      </div>
+      <div class="encarte-card">
+        <div class="encarte-capa ec-amarelo">🥩</div>
+        <div class="encarte-info">
+          <div>
+            <div class="encarte-titulo">Festival de Carnes</div>
+            <div class="encarte-periodo">18 a 31 de março</div>
+          </div>
+          <button class="btn-ver-encarte">Ver</button>
+        </div>
+      </div>
+      <div class="encarte-card">
+        <div class="encarte-capa ec-azul">🍷</div>
+        <div class="encarte-info">
+          <div>
+            <div class="encarte-titulo">Adega em Oferta</div>
+            <div class="encarte-periodo">1 a 15 de abril</div>
+          </div>
+          <button class="btn-ver-encarte">Ver</button>
+        </div>
+      </div>
+      <div class="encarte-card">
+        <div class="encarte-capa ec-verde">🥦</div>
+        <div class="encarte-info">
+          <div>
+            <div class="encarte-titulo">Hortifruti Fresco</div>
+            <div class="encarte-periodo">Toda semana</div>
+          </div>
+          <button class="btn-ver-encarte">Ver</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LOJAS ── -->
+  <section class="lojas" id="lojas">
+    <div class="section-label">Estamos perto de você</div>
+    <div class="section-title">Nossas lojas</div>
+    <div class="section-sub">Mais de 23 lojas espalhadas pelo Nordeste. Encontre a mais próxima de você.</div>
+
+    <div class="lojas-buscador">
+      <input type="text" placeholder="Digite sua cidade ou bairro...">
+      <button>Buscar</button>
+    </div>
+
+    <div class="lojas-grid">
+      <div class="loja-card">
+        <div class="loja-aberta">● Aberta agora</div>
+        <div class="loja-nome">Novo Atacarejo – Guabiraba</div>
+        <div class="loja-end">Rua da Bela Vista, 400 · Guabiraba, Recife – PE</div>
+        <div class="loja-info">
+          <span>🕗 07h–22h</span>
+          <span>🅿 350 vagas</span>
+          <span>❄ Climatizado</span>
+        </div>
+      </div>
+      <div class="loja-card">
+        <div class="loja-aberta">● Aberta agora</div>
+        <div class="loja-nome">Novo Atacarejo – Fragoso (Olinda)</div>
+        <div class="loja-end">Rodovia PE-15, s/n · Fragoso, Olinda – PE</div>
+        <div class="loja-info">
+          <span>🕗 07h–22h</span>
+          <span>🅿 350 vagas</span>
+          <span>❄ Climatizado</span>
+        </div>
+      </div>
+      <div class="loja-card">
+        <div class="loja-aberta">● Aberta agora</div>
+        <div class="loja-nome">Novo Atacarejo – Caruaru</div>
+        <div class="loja-end">Av. Rio Branco, 1200 · Centro, Caruaru – PE</div>
+        <div class="loja-info">
+          <span>🕗 07h–22h</span>
+          <span>🅿 280 vagas</span>
+          <span>❄ Climatizado</span>
+        </div>
+      </div>
+      <div class="loja-card">
+        <div class="loja-aberta">● Aberta agora</div>
+        <div class="loja-nome">Novo Atacarejo – Fortaleza</div>
+        <div class="loja-end">Av. Bezerra de Menezes, 600 · São Gerardo, Fortaleza – CE</div>
+        <div class="loja-info">
+          <span>🕗 07h–22h</span>
+          <span>🅿 320 vagas</span>
+          <span>❄ Climatizado</span>
+        </div>
+      </div>
+      <div class="loja-card">
+        <div class="loja-aberta">● Aberta agora</div>
+        <div class="loja-nome">Novo Atacarejo – Campina Grande</div>
+        <div class="loja-end">Av. Floriano Peixoto, 900 · Centro, Campina Grande – PB</div>
+        <div class="loja-info">
+          <span>🕗 07h–22h</span>
+          <span>🅿 200 vagas</span>
+          <span>❄ Climatizado</span>
+        </div>
+      </div>
+      <div class="loja-card"
+        style="border: 1px dashed rgba(255,208,0,0.3); display:flex; align-items:center; justify-content:center; cursor:default; min-height:120px;">
+        <div style="text-align:center; opacity:0.5;">
+          <div style="font-size:28px; margin-bottom:6px;">🗺️</div>
+          <div style="font-size:13px;">Ver todas as lojas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SOBRE ── -->
+  <div class="sobre" id="sobre">
+    <div>
+      <div class="section-label">Nossa história</div>
+      <div class="section-title">Nordestino de coração</div>
+      <p class="section-sub" style="margin-bottom:0;">O Novo Atacarejo é uma rede nordestina com matriz pernambucana,
+        nascida da união dos grupos empresariais SFA e Super Cidades. Surgimos com a missão de levar qualidade de
+        supermercado com preço de atacado para o povo nordestino.</p>
+
+      <div class="sobre-stats">
+        <div class="stat-box">
+          <div class="stat-numero">23+</div>
+          <div class="stat-label">Lojas espalhadas pelo Nordeste</div>
+        </div>
+        <div class="stat-box" style="border-color:var(--amarelo);">
+          <div class="stat-numero">4°</div>
+          <div class="stat-label">Anos de conquistas e crescimento</div>
+        </div>
+        <div class="stat-box" style="border-color:var(--azul);">
+          <div class="stat-numero">8k+</div>
+          <div class="stat-label">Empregos diretos gerados</div>
+        </div>
+        <div class="stat-box" style="border-color:var(--amarelo-escuro);">
+          <div class="stat-numero">21°</div>
+          <div class="stat-label">Ranking ABRAS dos melhores supermercados</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sobre-visual">
+      <div class="sobre-foto sf-amarelo">🛒</div>
+      <div class="sobre-foto sf-azul">❤️</div>
+      <div class="sobre-foto sf-cinza">🤝</div>
+    </div>
+  </div>
+
+  <!-- ── BANNER EMPREGO ── -->
+  <section class="banner-emprego" id="trabalhe">
+    <div class="section-label">Faça parte do time</div>
+    <div class="section-title">Venha ser do Novo!</div>
+    <p>O Novo Atacarejo está sempre em expansão e buscando talentos para integrar nosso time. Confira as vagas abertas e
+      venha crescer com a gente.</p>
+    <button class="btn-primario" style="margin:0 auto; background:var(--amarelo); color:var(--azul);">💼 Ver vagas
+      abertas</button>
+  </section>
+
+  <!-- ── REDES SOCIAIS ── -->
+  <section class="redes">
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px;">
+      <div>
+        <div class="section-label">Siga a gente</div>
+        <div class="section-title" style="margin-bottom:6px;">@novoatacarejo</div>
+        <p style="color:var(--cinza-texto); font-size:15px;">964K seguidores no Instagram • É do povo, é do Novo. 💛❤️💙
+        </p>
+      </div>
+      <a href="https://instagram.com/novoatacarejo" target="_blank"
+        style="background:var(--vermelho); color:white; border:none; border-radius:8px; padding:12px 22px; font-family:Barlow,sans-serif; font-weight:700; font-size:14px; cursor:pointer; text-decoration:none; display:inline-block;">Seguir
+        no Instagram →</a>
+    </div>
+    <div class="redes-grid">
+      <div class="rede-card rc-1">🛒</div>
+      <div class="rede-card rc-2">🤝</div>
+      <div class="rede-card rc-3">❤️</div>
+      <div class="rede-card rc-4">🌿</div>
+    </div>
+  </section>
+
+  <!-- ── NEWSLETTER ── -->
+  <section class="newsletter">
+    <div class="section-label">Fique por dentro</div>
+    <div class="section-title">Receba as melhores ofertas</div>
+    <p>Cadastre seu e-mail e seja o primeiro a saber sobre nossas promoções, lançamentos e eventos especiais.</p>
+    <div class="newsletter-form">
+      <input type="email" placeholder="Seu melhor e-mail">
+      <button>Quero receber 💛</button>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo-texto">Novo Atacarejo</div>
+        <div class="footer-logo-sub">O melhor disparado</div>
+        <p class="footer-sobre">Rede nordestina com matriz pernambucana. Qualidade de supermercado com precinho de
+          atacado para o povo nordestino.</p>
+        <div class="footer-redes" style="margin-top:20px;">
+          <a href="https://instagram.com/novoatacarejo" target="_blank" class="rede-icon">📸</a>
+          <a href="https://facebook.com/novoatacarejo" target="_blank" class="rede-icon">👍</a>
+          <a href="#" class="rede-icon">🎵</a>
+          <a href="https://br.linkedin.com/company/novoatacarejo" target="_blank" class="rede-icon">💼</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-titulo">Institucional</div>
+        <ul class="footer-links">
+          <li><a href="#">Quem somos</a></li>
+          <li><a href="#">Nossa história</a></li>
+          <li><a href="#">Responsabilidade social</a></li>
+          <li><a href="#">Imprensa</a></li>
+          <li><a href="#">Parceiros e fornecedores</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-titulo">Atendimento</div>
+        <ul class="footer-links">
+          <li><a href="#">Fale conosco</a></li>
+          <li><a href="#">Ouvidoria</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+          <li><a href="#">Termos de uso</a></li>
+          <li><a href="#">Política de cookies</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-titulo">Trabalhe conosco</div>
+        <ul class="footer-links">
+          <li><a href="#">Vagas abertas</a></li>
+          <li><a href="#">Estágios</a></li>
+          <li><a href="#">Jovem aprendiz</a></li>
+          <li><a href="#">Cultura e benefícios</a></li>
+        </ul>
+        <div style="margin-top:20px;">
+          <div class="footer-titulo">Contato</div>
+          <div style="font-size:13px; color:rgba(255,255,255,0.45); line-height:1.8;">
+            SAC: 0800 000 0000<br>
+            seg–sáb, 8h–18h
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Novo Atacarejo. Todos os direitos reservados.</span>
+      <span>CNPJ: 00.000.000/0000-00 · Recife – PE</span>
+    </div>
+  </footer>
+
+  <!-- ── COOKIE BANNER ── -->
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-texto">
+      Utilizamos seus dados para oferecer uma experiência mais relevante ao analisar e personalizar conteúdos e
+      anúncios. Ao navegar pelo site, você autoriza o Novo Atacarejo a coletar estes dados. Consulte nossa <a
+        href="#">Política de Privacidade</a>.
+    </div>
+    <div class="cookie-buttons">
+      <button class="btn-recusar" onclick="closeCookie()">Recusar</button>
+      <button class="btn-aceitar" onclick="closeCookie()">Aceitar cookies</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
